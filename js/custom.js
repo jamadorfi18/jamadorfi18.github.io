@@ -2,10 +2,14 @@
 
   "use strict";
 
+    const text = $('.text-icon-header').text();
+    const newText = 'Give me some light please!'
+
     // COLOR MODE
     $('.color-mode').click(function(){
         $('.color-mode-icon').toggleClass('active')
         $('body').toggleClass('dark-mode')
+        $('.text-icon-header').text( $('.text-icon-header').text() == text ? newText : text)
     })
 
     // HEADER
